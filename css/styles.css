@@ -11126,8 +11126,15 @@ body {
   margin-bottom: 5rem;
 }
 
+/* Reverses column stacking order on mobile/tablet screens for even rows */
+@media (max-width: 991.98px) {
+  .projects-section .row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
+
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11149,14 +11156,30 @@ body {
 }
 
 .signup-section {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/Lunik\ 5.jpg");
+  background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), 
+    url("../assets/img/Lunik\ 5.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  
-  /* Zoom the image so there is overflow to slide left/right */
-  background-size: 130% auto !important; 
-  /* 0% pulls far left, 20% pulls slightly left */
-  background-position: center !important; 
+  background-position: center;
+  /* Default cover ensures full fill across all screen aspect ratios */
+  background-size: cover; 
+}
+
+/* Tablet (iPad) Adjustment */
+@media (max-width: 1024px) {
+  .signup-section {
+    background-size: 150% auto;
+    background-position: center top;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .signup-section {
+    /* Set height/size relative to viewport height on portrait mobile screens */
+    background-size: auto 100%; 
+    background-position: center center;
+  }
 }
 
 .signup-section .form-signup input {
