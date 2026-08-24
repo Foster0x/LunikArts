@@ -95,6 +95,13 @@
   }
 }
 
+.portfolio-img {
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important; /* Locks both containers to identical squares */
+  object-fit: contain !important; /* Zero cropping on EITHER image */
+  background-color: #f8f9fa;     /* Matches dark site theme */
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11142,13 +11149,16 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/Lunik\ 5.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  
+  /* Zoom the image so there is overflow to slide left/right */
+  background-size: 130% auto !important; 
+  /* 0% pulls far left, 20% pulls slightly left */
+  background-position: center !important; 
 }
+
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;

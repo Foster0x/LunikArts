@@ -57,41 +57,39 @@
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/Lunik 2.png" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                        </div>
+                <div class="row gx-0 justify-content-center m-1">
+                    <div class="col-lg-6">
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 2.png" alt="..." />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 11.png" alt="..." />
                     </div>
                 </div>
                 <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/Lunik 10.jpg" alt="..." /></div>
+                <div class="row gx-0 justify-content-center m-1">
                     <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 16.jpg" alt="..." />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 13.jpg" alt="..." />
                     </div>
                 </div>
                 <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/Lunik 13.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row gx-0 justify-content-center m-1">
+                    <div class="col-lg-6">
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 1.png" alt="..." />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 4.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Project Three Row-->
+                <div class="row gx-0 justify-content-center m-1">
+                    <div class="col-lg-6">
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 6.jpg" alt="..." />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid portfolio-img" src="assets/img/Lunik 15.jpg" alt="..." />
                     </div>
                 </div>
             </div>
@@ -103,28 +101,27 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="fas fa-envelope fa-2x mb-3 text-white"></i>
                         <h2 class="text-white mb-5">Get In Touch</h2>
-        
                         <form id="contactForm" netlify>
                             <!-- Name input -->
                             <div class="form-floating mb-4">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." required/>
                                 <label for="name">Full Name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="invalid-feedback">A name is required.</div>
                             </div>
         
                             <!-- Email address input -->
                             <div class="form-floating mb-4">
-                                <input class="form-control" id="contactEmail" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="contactEmail" type="email" placeholder="name@example.com" required/>
                                 <label for="contactEmail">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="contactEmail:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="contactEmail:email">Email is not valid.</div>
+                                <div class="invalid-feedback">An email is required.</div>
+                                <div class="invalid-feedback">Email is not valid.</div>
                             </div>
         
                             <!-- Message input -->
                             <div class="form-floating mb-4">
-                                <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" required></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <div class="invalid-feedback">A message is required.</div>
                             </div>
         
                             <!-- Submit Button -->
@@ -164,7 +161,7 @@
             transform: scale(1.15);
             opacity: 0.95;
             }
-    </style>
+        </style>
 
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; 2026 LunikArts | All Rights Reserved</div></footer>
