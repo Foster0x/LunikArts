@@ -161,17 +161,17 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="fas fa-envelope fa-2x mb-3 text-white"></i>
                         <h2 class="text-white mb-5">Get In Touch</h2>
-                        <form id="contactForm" netlify>
+                        <form id="contactForm" name="contact" netlify>
                             <!-- Name input -->
                             <div class="form-floating mb-4">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." required/>
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required/>
                                 <label for="name">Full Name</label>
                                 <div class="invalid-feedback">A name is required.</div>
                             </div>
         
                             <!-- Email address input -->
                             <div class="form-floating mb-4">
-                                <input class="form-control" id="contactEmail" type="email" placeholder="name@example.com" required/>
+                                <input class="form-control" id="contactEmail" name="email" type="email" placeholder="name@example.com" required/>
                                 <label for="contactEmail">Email address</label>
                                 <div class="invalid-feedback">An email is required.</div>
                                 <div class="invalid-feedback">Email is not valid.</div>
@@ -179,7 +179,7 @@
         
                             <!-- Message input -->
                             <div class="form-floating mb-4">
-                                <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" required></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 12rem" required></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback">A message is required.</div>
                             </div>
